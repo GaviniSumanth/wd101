@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-b from-cyan-500 to-blue-500 flex flex-wrap items-center justify-center h-screen flex gap-5"
+  >
+    <div class="container bg-blue-200 rounded-xl w-fit">
+      <form
+        id="user-form"
+        class="grid grid-cols-3 gap-5 content-center p-5 w-fit items-center"
+      >
+        <label class="text-left" for="name">Name:</label>
+        <input
+          class="rounded ring-1 ring-black shadow-md shadow-blue-300 p-1 col-span-2"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+        <label class="text-left" for="email">Email:</label>
+        <input
+          class="rounded ring-1 ring-black shadow-md shadow-blue-300 p-1 col-span-2"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <label class="text-left" for="password">Password:</label>
+        <input
+          class="rounded ring-1 ring-black shadow-md shadow-blue-300 p-1 col-span-2"
+          type="password"
+          id="password"
+          name="password"
+          required
+        />
+        <label class="text-left" for="date">Date:</label>
+        <input
+          class="rounded ring-1 ring-black shadow-md shadow-blue-300 p-1 col-span-2"
+          type="date"
+          id="dob"
+          name="dob"
+          required
+        />
+        <div class="col-span-2 flex justify-between items-center col-span-3">
+          <div>
+            <input
+              class="rounded accent-blue-700 shadow shadow-blue-300 w-5 h-5"
+              type="checkbox"
+              id="terms"
+              name="terms"
+              required
+            />
+            <label class="text-left ml-3" for="terms"
+              >Do you accept the terms?</label
+            >
+          </div>
+          <button
+            class="text-white bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded self-end"
+            type="submit"
+            value="Submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- TABLE -->
+    <div
+      class="container bg-blue-200 rounded-xl w-full m-3 lg:w-6/12 lg:h-5/6 h-fit overflow-auto"
+    >
+      <table
+        id="user-data"
+        class="table-auto border-separate border-spacing-3 w-full overflow-auto"
+      ></table>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
